@@ -11,73 +11,57 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container-fluid ingreso-Usuario">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>
-                    INGRESO DE USUARIOS
-                </h1>
-            </div>
-            <form action="">
-                <div class="row">
-                    <div class="col-md-3">
-                        <h2 class="inputName"> Usuario: </h2>
-                    </div>
-                    <div class="col-md-9">
-                        <input type="text" name="user" id="userBox" placeholder="Ingrese el Usuario..." class="inputBox">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <h2 class="inputName"> Email: </h2>
-                    </div>
-                    <div class="col-md-9">
-                        <input type="text" name="email" id="emailBox" placeholder="Ingrese el email..." class="inputBox">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <h2 class="inputName"> Password: </h2>
-                    </div>
-                    <div class="col-md-9">
-                        <input type="text" name="password" id="passwordBox" placeholder="Ingrese la Contraseña..." class="inputBox">
-                    </div>
-                </div>
-            </form>
-            
+    <div id="main">
+        <div class="container-fluid ingreso-Usuario" id="contenidoMain">
             <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-9">
-                    <table style="width: 400px; margin-left: 5px;">
-                        <tr>
-                            <td>
-                                <div>
-                                    <button type="submit" class="btn btn-primary ingresarBtn" onclick="validarBtn()">
-                                        Ingresar
-                                    </button>
-                                </div>
-                            </td>
-                            <td style="margin-left: 50px;">
-                                <div>
-                                    <a href="Registro/registro.html">
-                                        <button class="btn btn-primary registrarBtn">
-                                            Registrarse
-                                        </button>
-                                    </a>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
+                <div class="col-md-12">
+                    <h1 id="titulo">
+                        INICIO DE SESION
+                    </h1>
                 </div>
-                    
-                    
-                    
-                       
-               
-             
+                <form action="" id="formulario">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h2 class="inputName"> Usuario: </h2>
+                        </div>
+                        <div class="col-md-7">
+                            <input type="text" name="user" id="userBox" placeholder="Ingrese el Usuario..." class="inputBox">
+                        </div>
+                        <div id="userInd" class="col-md-2"></div> <!--Indicacion-->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h2 class="inputName"> Email: </h2>
+                        </div>
+                        <div class="col-md-7">
+                            <input type="text" name="mail" id="emailBox" placeholder="Ingrese el email..." class="inputBox">
+                        </div>
+                        <div id="mailInd" class="col-md-2"></div> <!--Indicacion-->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h2 class="inputName"> Password: </h2>
+                        </div>
+                        <div class="col-md-7">
+                            <input type="text" name="pass" id="passwordBox" placeholder="Ingrese la Contraseña..." class="inputBox">
+                        </div>
+                        <div id="passInd" class="col-md-2"></div> <!--Indicacion-->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-3">
+                            <div class="col-md-3">
+                                <input type="button" class="btn btn-primary registrarBtn" style="width: 100px; margin-left: 5px" onclick="validarIngresoBtn()" value="Iniciar"></input>
+                            </div>
+                        </div>
+                    </div>
+                </form>     
+                 
+            </div>
         </div>
     </div>
     
+    <script src="app.js"></script>
     
 </body>
 </html>

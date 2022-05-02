@@ -2,6 +2,10 @@
     background-color: #69FF99;
     margin-top: 20px;
 }
+.registro-Usuario{
+    background-color: #99CCFF;
+    margin-top: 20px;
+}
 
 h1{
     font-size: 40px;
@@ -46,4 +50,33 @@ h1{
 .dropMenu:hover{
     background-color: white;
     color: black;
+}
+
+.celdaTabla2{
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    border-top: none;
+}
+
+.celdaTabla{
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.filaTable{
+    border-top: none;
+}
+
+.eliminarFila{
+    width: 50px;
+    margin-top: 10px;
+    color:white;
+    background-color: rgb(77, 9, 165);
+    border: none;
+    border-radius: 20px;
+}
+.eliminarFila:hover{
+    background-color: rgba(77, 9, 165, 0.452);
 }
